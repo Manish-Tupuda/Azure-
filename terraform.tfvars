@@ -1,4 +1,4 @@
-subscription_id ="**************" // Give your azure subcription own id
+subscription_id ="**************" // Give your azure subcription id
 
 
 
