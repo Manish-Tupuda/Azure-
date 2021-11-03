@@ -1,11 +1,11 @@
 data "azurerm_resource_group" "rg" {
-  name = "Woordurff_Sawyer"
+  name = "Manish_Tupuda"
   
 }
 
  resource "azurerm_storage_account" "storageaccount" {
   name                     = "zwerty"
-  resource_group_name      = "Woordurff_Sawyer"
+  resource_group_name      = "Manish_Tupuda"
   location                 = "East US"
   account_tier             = "Standard"
   account_replication_type = "LRS"
@@ -54,7 +54,7 @@ data "azurerm_storage_account_blob_container_sas" "storage_account_blob_containe
 resource "azurerm_app_service_plan" "rg" {
   name                = "function-consumptionas-asp"
   location            = "East US"
-  resource_group_name = "Woordurff_Sawyer"
+  resource_group_name = "Manish_Tupuda"
   kind                = "FunctionApp"
   reserved = true
   sku {
@@ -65,7 +65,7 @@ resource "azurerm_app_service_plan" "rg" {
 
 resource "azurerm_function_app" "rg" {
   name                = "newaddapp"
-  resource_group_name = "Woordurff_Sawyer"
+  resource_group_name = "Manish_Tupuda"
    location            = "East US"
   app_service_plan_id = azurerm_app_service_plan.rg.id
   app_settings = {
