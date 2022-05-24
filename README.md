@@ -1,1 +1,1 @@
-# Code for zip deployment of azure function into azure portal
+C# Code for zip deployment of azure function into azure portal
